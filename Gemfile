@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'haml', '~> 5.0', '>= 5.0.3'
 gem 'simple_form', '~> 3.5'
 gem 'paperclip', '~> 5.1'
