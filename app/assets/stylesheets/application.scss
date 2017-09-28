@@ -40,19 +40,29 @@ body {
 
 
 .navbar {
+	background-color: #ED2939;
 	margin-bottom: 50px;
 	border: none;
 	.navbar-brand {
+		color: white;
 		letter-spacing: -1px;
 		font-weight: bold;
 		font-size: 25px;
 		a {
-			color: $red;
+			color: white;
+			text-decoration: none;
 		}
 	}
+	li {
+		a {
+			color: white !important;
+		}
+	}	
 }
 
+
 .recipe {
+	box-shadow: 7px 7px 3px #888888;
 	background: white;
 	border-radius: 5px;
 	margin-bottom: 40px;
@@ -60,12 +70,14 @@ body {
 		max-width: 100%;
 		border-radius: 5px 5px 0 0;
 		overflow: hidden;
+		
 	}
 	img {
 		width: 100%;
 		transition: all .75s ease-out;
 		&:hover {
 			transform: scale(1.075);
+			box-shadow: -7px -7px -3px #888888;
 		}
 	}
 	h2 {
