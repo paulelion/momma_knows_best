@@ -57,6 +57,9 @@ body {
 		a {
 			color: white !important;
 		}
+		a:hover {
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(122,55,55, 0.6);
+		}
 	}	
 }
 
@@ -201,6 +204,10 @@ h1, h2, h3 {
 }
 
 a {
+	color: #D86161;
+}
+
+a:hover {
 	color: #7a3737;
 }
 
@@ -213,14 +220,51 @@ a {
     top: -15px;
 }
 
+/* Forms */
+
 .nested-fields {
 	label {
 		text-indent: 100%;
     	white-space: nowrap;
     	overflow: hidden;
 	}
+	textarea:focus,
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="date"]:focus,
+	input[type="month"]:focus,
+	input[type="time"]:focus,
+	input[type="week"]:focus,
+	input[type="number"]:focus,
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="color"]:focus,
+	.uneditable-input:focus {   
+  		border-color: rgba(122,55,55, 0.8);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(122,55,55, 0.6);
+		outline: 0 none;
+	}
+}
+
+.panel-body {
+	input:focus, 
+	textarea:focus {
+		border-color: rgba(122,55,55, 0.8);
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(122,55,55, 0.6);
+		outline: 0 none;
+	} 
 }
 	
+.form-control:focus {
+	border-color: rgba(122,55,55, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(122,55,55, 0.6);
+	outline: 0 none;
+}
+
 
 
 
