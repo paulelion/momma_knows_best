@@ -212,6 +212,14 @@ a {
     position: relative;
     top: -15px;
 }
+
+.nested-fields {
+	label {
+		text-indent: 100%;
+    	white-space: nowrap;
+    	overflow: hidden;
+	}
+}
 	
 
 
